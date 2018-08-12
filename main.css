@@ -1,0 +1,40 @@
+h1 {
+    font-family: 'Lekton', sans-serif;
+}
+
+.logo {
+    width: 25px;
+    height: 25px;
+}
+
+
+.parent {
+  position: relative;
+  width: 100%;
+}
+.one, .two {
+  position: absolute;
+  height: 100vh;
+  width: 61%;
+}
+.one {
+  left: 0;
+  top: 0;
+  background-image: url('img/shirtsquare.jpg');
+  background-repeat: no-repeat;
+  background-position: center; 
+  object-fit: contain;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%); 
+}
+.two {
+  right: 0;
+  top: 0;
+  background-image: url('img/chairsquare.jpg');
+  background-repeat: no-repeat;
+  background-position: center; 
+  object-fit: contain;
+  -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%); 
+}
+
