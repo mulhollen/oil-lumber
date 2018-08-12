@@ -1,21 +1,44 @@
+@font-face {
+  font-family: 'Flama-Basic';
+  src: url('font/Flama-Basic.otf');
+}
+
 h1 {
-    font-family: 'Lekton', sans-serif;
+    font-family: 'Flama-Basic', 'Lekton', sans-serif;
+    font-size: 2rem;
+    color: black;
+    letter-spacing: 1.25rem;
 }
 
-.logo {
-    width: 25px;
-    height: 25px;
+.apparelLogo {
+    height: 75px;
+    border: 1px solid black;
 }
 
+.apparelText {
+    margin: 13% 0 0px -1%;
+}
+
+.designLogo {
+    height: 150px;
+    border: 1px solid black;
+}
+
+.designText {
+    margin: 0 2% 16% 0;
+}
 
 .parent {
   position: relative;
   width: 100%;
+  height: 100%
 }
 .one, .two {
   position: absolute;
-  height: 100vh;
+  height: 100vh; /* SUPER IMPORTANT TO BE IN VH */
   width: 61%;
+  margin: -.5rem;
+  padding: 0;
 }
 .one {
   left: 0;
@@ -27,6 +50,15 @@ h1 {
   -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%); 
 }
+
+.one_content {
+    margin: 1rem;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    align-self: flex-start; 
+}
+
 .two {
   right: 0;
   top: 0;
@@ -37,4 +69,26 @@ h1 {
   -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%); 
 }
+
+.two_content {
+    margin: 1rem;
+    height: 96vh;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    align-items: flex-end; 
+}
+
+@media only screen and (max-width : 400px) {
+
+    .one_content {
+        margin: 3rem;
+    }
+
+    .two_content {
+        margin: 3rem;
+    }
+
+}
+
 
